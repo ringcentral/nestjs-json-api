@@ -18,8 +18,8 @@ export function props(controller: ControllerMixin, entity: Entity, config: Bindi
 
   const decoratorOptions: DecoratorOptions = Reflect.getMetadata(JSON_API_OPTIONS, controller);
   if (decoratorOptions) {
-    const {allowMethode = []} = decoratorOptions;
-    if (!allowMethode.includes(name)) {
+    const {allowMethod = []} = decoratorOptions;
+    if (!allowMethod.includes(name)) {
       return void(0);
     }
   }

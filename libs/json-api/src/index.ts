@@ -6,4 +6,4 @@ export * from './lib/constants';
 export * from './lib/helpers';
 export * from './lib/types';
 export { SwaggerService } from './lib/services/swagger/swagger.service';
-export { ExcludeMethode } from './lib/config/bindings';
+export { ExcludeMethod } from './lib/config/bindings';
