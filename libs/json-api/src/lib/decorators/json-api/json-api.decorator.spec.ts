@@ -3,7 +3,7 @@ import 'reflect-metadata';
 import { JSON_API_ENTITY, JSON_API_OPTIONS } from '../../constants/reflection';
 import { JsonApi } from './json-api.decorator';
 import { DecoratorOptions } from '../../types';
-import {ExcludeMethod, Bindings} from '../../config/bindings';
+import {excludeMethod, Bindings} from '../../config/bindings';
 
 
 describe('InjectServiceDecorator', () => {
@@ -32,7 +32,7 @@ describe('InjectServiceDecorator', () => {
     const testedEntity = class SomeEntity {};
     const example = ['getAll', 'deleteRelationship'];
     const apiOptions: DecoratorOptions = {
-      allowMethod: ExcludeMethod(example as any)
+      allowMethod: excludeMethod(example as any)
     }
     @JsonApi(testedEntity, apiOptions)
     class SomeClass {}

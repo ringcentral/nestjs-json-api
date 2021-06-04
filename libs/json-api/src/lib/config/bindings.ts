@@ -332,7 +332,7 @@ export const Bindings: BindingsConfig = {
   }
 };
 
-export function ExcludeMethod(names: Array<Partial<MethodName>>): Array<MethodName> {
+export function excludeMethod(names: Array<Partial<MethodName>>): Array<MethodName> {
   const tmpObject = names.reduce((acum, key) => (acum[key] = true, acum), {})
   return Object.keys(Bindings).filter(method => !tmpObject[method]) as Array<MethodName>
 }
