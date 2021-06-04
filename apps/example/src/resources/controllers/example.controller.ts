@@ -1,9 +1,13 @@
 
 import { ExampleService } from "../services/example.service";
-import { InjectService, JsonApi, JsonApiController, JsonApiService, QueryParams } from "nest-json-api";
+import { InjectService, JsonApi, JsonApiController, JsonApiService, QueryParams, ExcludeMethode } from "nest-json-api";
 import { Users } from "database";
 
-@JsonApi(Users)
+@JsonApi(Users,
+  {
+    allowMethode: ExcludeMethode(['getAll', 'deleteRelationship'])
+  }
+)
 export class ExampleController implements JsonApiController {
   public constructor(private readonly exampleService: ExampleService) {
   }
