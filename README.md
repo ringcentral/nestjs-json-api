@@ -1,4 +1,8 @@
 <p align='center'>
+<b>New version with support TypeOrm 3.x.x and NestJs 9.x.x <a href="https://github.com/klerick/nestjs-json-api" target="_blank">here</a></b>
+</p>
+
+<p align='center'>
   <a href="https://www.npmjs.com/package/json-api-nestjs" target="_blank"><img src="https://img.shields.io/npm/v/json-api-nestjs.svg" alt="NPM Version" /></a>
   <a href="https://www.npmjs.com/package/json-api-nestjs" target="_blank"><img src="https://img.shields.io/npm/l/json-api-nestjs.svg" alt="Package License" /></a>
   <a href="https://www.npmjs.com/package/json-api-nestjs" target="_blank"><img src="https://img.shields.io/npm/dm/json-api-nestjs.svg" alt="NPM Downloads" /></a>
